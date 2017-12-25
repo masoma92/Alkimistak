@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Alkimistak
 {
-    public class Elemek
+    public class Elemek //gyökér
     {
         int kiindulasianyag;
         char katalizator;

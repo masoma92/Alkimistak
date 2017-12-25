@@ -4,7 +4,7 @@ namespace Alkimistak
 {
     public class Kiserlet
     {
-        Elemek[] elemek;
+        Elemek[] elemek; //elemek tömb
         int elemSzam;
         StreamReader sr;
 

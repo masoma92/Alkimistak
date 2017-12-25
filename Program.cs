@@ -6,7 +6,7 @@ namespace Alkimistak
     {
         public static void Main(string[] args)
         {
-            Vizsgalat vizs = new Vizsgalat();
+            Vizsgalat vizs = new Vizsgalat(); //vizsgálat példány
             Console.ReadLine();
         }
     }
