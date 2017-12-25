@@ -42,7 +42,7 @@ namespace Alkimistak
             else
             {
                 Console.WriteLine("\nNem lehet!");
-                this.sw.WriteLine("Nem lehet!");
+                this.sw.WriteLine("Nem lehet! ");
             }
             sw.Close();
         }
