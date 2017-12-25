@@ -47,7 +47,7 @@ namespace Alkimistak
             sw.Close();
         }
 
-        private string BejarasiUtvonalak(int kezdoElem, int arany, string utvonal) //progi lelke
+        private string BejarasiUtvonalak(int kezdoElem, int arany, string utvonal)
         {
             for (int i = 0; i < this.beVizs.Elemszam; i++)
             {
