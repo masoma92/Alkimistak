@@ -70,37 +70,33 @@ namespace Alkimistak
 
         private bool VaneAranyKiindulo()
         {
-            bool x = false;
-            for (int i = 0; i < this.beVizs.Elemszam; i++)
+            int i = 0;
+            while (i<this.beVizs.Elemek.Length && this.beVizs.Elemek[i].Kiindulasianyag != 0)
             {
-                if (this.beVizs.Elemek[i].Kiindulasianyag == 0)
-                {
-                    x = true;
-                }
-
+                i++;
             }
-            return x;
+            return i < this.beVizs.Elemek.Length;
         }
 
         private bool VaneAranyVegtermek()
         {
             int i = 0;
-            while (this.beVizs.Elemek[i].Vegtermek==0 && i<this.beVizs.Elemek.Length)
+            while (this.beVizs.Elemek[i].Vegtermek==0 && i<=this.beVizs.Elemek.Length)
             {
                 i++;
             }
-            return i < this.beVizs.Elemek.Length;
+            return i <= this.beVizs.Elemek.Length;
 
         }
 
         private bool VanEVasAlapbol()
         {
             int i = 0;
-            while (this.beVizs.Elemek[i].Kiindulasianyag == 1 && i < this.beVizs.Elemek.Length)
+            while (this.beVizs.Elemek[i].Kiindulasianyag == 1 && i <= this.beVizs.Elemek.Length)
             {
                 i++;
             }
-            return i < this.beVizs.Elemek.Length;
+            return i <= this.beVizs.Elemek.Length;
         }
 
         private string EredmenyIsmetlodesNelkul(string bemenet)
